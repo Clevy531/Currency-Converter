@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Currency Converter</title>
+        <link rel="icon" href="money.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Currency Converter</h1>
+            <div class="currency-container">
+                <select id="currency-first">
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="INR">INR</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="ILS">ILS</option>
+                </select>
+                <input type="number" id="worth-first" value="1" min="0">
+            </div>
+            <div class="currency-container">
+                <select id="currency-second">
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="ILS" selected>ILS</option>
+                </select>
+                <input type="number" id="worth-second" disabled>
+            </div>
+            <p class="exchange-rate" id ="exchange-rate">CONVERSION</p>
+        </div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
